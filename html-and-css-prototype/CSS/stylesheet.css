@@ -1,26 +1,27 @@
 /* Global resets */
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+	background-color:#20A1D4;
+	font-family:  Avenir-Book, sans-serif;
+	color: #20A1D4;
+	line-height: 1.6;
 }
 
 /* Fonts */
-h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+h1 {     
+         font-family: rooney-web,sans-serif;
+	 font-size: 10px;
+  	 font-weight: bold;
+         margin: 0;
+         text-align: center;
+	 
 }
-
 .container {
-	margin: 2em auto;
-	max-width: 630px;
+	margin: auto;
+	min-width:200px;
 	text-align: center;
 }
 
@@ -38,5 +39,53 @@ h1 {
   grey: #777;
   light grey: #eaeaea;
 */
+body {
+  margin: 40px;
+}
 
-/* Your CSS code goes here */
+.sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+
+    .wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-areas:
+    "....... header header"
+        "sidebar content content"
+        "footer  footer  footer";
+        background-color: #fff;
+        color: #444;
+    }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+Resources
+
+}Your CSS code goes here */
